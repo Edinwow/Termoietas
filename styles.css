@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: courier;
+    font-size: 12px;
+    line-height: 10px;
+    background: white;
+  }
+
+canvas {
+  display: block;
+}
+
+table {
+  font-size: 16px;
+  width:681px;
+  border-collapse:collapse;
+  padding:5px;
+}
+table th {
+  padding:5px;
+  background: #2a9d8f;
+  color: #ffffff;
+}
+table td {
+  text-align:center;
+  padding:5px;
+  background: #f6fefd;
+  color: #313030;
+}
+  
+input {
+  width: 100%;
+  background-color: #f6fefd;
+  border: none;
+  border-bottom: 1px solid #313030;
+}
+
+button {
+  width: 681px;
+  margin: 5px 0;
+  border: 0;
+  height: 20px;
+}
