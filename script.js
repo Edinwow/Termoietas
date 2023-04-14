@@ -96,8 +96,6 @@ function getData() {
 //Desenha pontos de um ano inteiro
 function plot() {
   
-  getData();
-
   for (let i = 0; i < dataManual.length; i++) {
     x = dataManual[i][0];
     y = dataManual[i][1];
