@@ -1,5 +1,4 @@
 let data = [];
-let dataManual = [];
 let months = ['J', 'F', 'MÇ', 'A', 'M', 'JN', 'JL', 'A', 'S', 'O', 'N', 'D']
 colors = [[240, 84, 44], [250, 164, 41], [254, 205, 27], [222, 224, 37], [149, 201, 64], [73, 180, 72], [18, 161, 71], [20, 164, 92], [19, 188, 183], [27, 136, 203], [44, 87, 166], [64, 64, 154]];
 let diagram;
@@ -66,7 +65,6 @@ function plotMonth() {
     g = colors[i][1];
     b = colors[i][2];
 
-
     convertToCoord(x, y, r, g, b);
 
     fill(255);
@@ -92,25 +90,3 @@ function getData() {
   }
   
 }
-
-//Desenha pontos de um ano inteiro
-function plot() {
-  
-  for (let i = 0; i < dataManual.length; i++) {
-    x = dataManual[i][0];
-    y = dataManual[i][1];
-
-    r = colors[i][0];
-    g = colors[i][1];
-    b = colors[i][2];
-
-
-    convertToCoord(x, y, r, g, b);
-
-    fill(255);
-    noStroke();
-    textSize(10);
-    text(months[i], x, y+1);
-  }
-}
-
